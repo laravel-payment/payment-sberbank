@@ -1,0 +1,21 @@
+{
+    "name": "laravel-payment/payment-sberbank",
+    "description": "Laravel payment system payment provider for Sberbank",
+    "type": "laravel-payment-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yuriy Potemkin",
+            "email": "ysoft2000@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravel-payment/manager":"dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelPayment\\PaymentSberbank\\": ""
+        }
+    }
+}
