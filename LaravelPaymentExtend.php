@@ -10,6 +10,6 @@ class LaravelPaymentExtend
 {
     public function handle(PaymentServiceBooted $paymentBooted)
     {
-        $paymentBooted->extendService('sberbank', __NAMESPACE__ . '\Provider');
+        $paymentBooted->extendService('sberbank', Provider::class);
     }
 }
