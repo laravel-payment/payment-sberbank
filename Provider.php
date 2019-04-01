@@ -17,9 +17,8 @@ class Provider extends ProviderAbstract
     const CURRENCY_UAH = 980;
     const CURRENCY_USD = 840;
 
-    public function __construct()
+    public function boot()
     {
-dd($this->config);
         if (!empty($this->config['token'])) {
             $data = [
                 'token' => $this->config['token'],
@@ -38,6 +37,7 @@ dd($this->config);
             ->setDataType(RequestClient::DATA_TYPE_JSON);
 
     }
+
 
     /**
      * Redirect to payment form
