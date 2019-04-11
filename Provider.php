@@ -10,6 +10,7 @@ use LaravelPayment\Manager\Exceptions\Payment\OrderNumberException;
 use LaravelPayment\Manager\Exceptions\Payment\UnknownException;
 use LaravelPayment\Manager\Models\Payment;
 use LaravelPayment\Manager\Payment\ProviderAbstract;
+use LaravelPayment\Manager\Payment\Results\CallbackResult;
 use LaravelPayment\Manager\Payment\Results\ProcessResult;
 use LaravelPayment\Manager\Payment\Results\StatusResult;
 use LaravelPayment\Manager\Support\RequestClient;
@@ -55,7 +56,7 @@ class Provider extends ProviderAbstract
 
     }
 
-    public function currencies()
+    public function callback($data): CallbackResult
     {
 
     }
